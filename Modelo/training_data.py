@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 import pickle
 
 df_google_sin_duplicados = read_pickle(r'Modelo/df_google_sin_duplicados.pkl')
-x_train_ = read_pickle(r"C:/Users/gcruz_li35hm9/Desktop/Bootcamp_UDD_Ciencia_de_Datos/Proyecto_7_Bootcamp/Repositorio_Proyecto_7/Modelo/df_x_train_transformed.pkl")
+x_train_ = read_pickle(r"Modelo/df_x_train_transformed.pkl")
 y_train_ = read_pickle(r"Modelo/y_train.pkl")
 
 class TrainingClass:

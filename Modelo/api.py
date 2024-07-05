@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from pickle import dump, load
 
 df_google_sin_duplicados = read_pickle(r'Modelo/df_google_sin_duplicados.pkl')
-x_train_ = read_pickle(r"C:/Users/gcruz_li35hm9/Desktop/Bootcamp_UDD_Ciencia_de_Datos/Proyecto_7_Bootcamp/Repositorio_Proyecto_7/Modelo/df_x_train_transformed.pkl")
+x_train_ = read_pickle(r"Modelo/df_x_train_transformed.pkl")
 y_train_ = read_pickle(r"Modelo/y_train.pkl")
 
 app = Flask(__name__)
@@ -57,4 +57,4 @@ def predict():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)
